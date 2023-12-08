@@ -1,0 +1,93 @@
+.header {
+  padding: 30px 5px;
+}
+.header .logo img:last-child {
+  display: none;
+}
+.dark .header .logo img:last-child {
+  display: block;
+}
+.dark .header .logo img:first-child {
+  display: none;
+}
+.top-panel .notes {
+  color: #3478f6;
+  font-size: 13px;
+  font-weight: 500;
+  border: 0;
+  background: none;
+  cursor: pointer;
+}
+.top-panel .notes .icons-notes {
+  font-size: 17px;
+  margin-right: 10px;
+}
+.top-panel .notes:disabled {
+  color: #acacac;
+  filter: grayscale(100%);
+  cursor: default;
+}
+.top-panel .main-search {
+  margin: 0 15px;
+  width: 325px;
+}
+.top-panel .main-search .icons-search {
+  font-size: 15px;
+  color: #a4abb5;
+  left: 15px;
+}
+.top-panel .main-search .icons-cross {
+  font-size: 12px;
+  color: #a4abb5;
+  right: 15px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.top-panel .main-search input.form-control {
+  background: #ebf1fa;
+  border-radius: 8px;
+  padding: 7px 15px 7px 40px;
+  font-size: 13px;
+  font-weight: 400;
+}
+.form-control::placeholder {
+  color: #a4abb5;
+  opacity: 1;
+}
+.form-control:-ms-input-placeholder {
+  color: #a4abb5;
+}
+.form-control::-ms-input-placeholder {
+  color: #a4abb5;
+}
+.top-panel .main-search .icon-close {
+  right: 15px;
+}
+.top-panel .btn-salesboost span {
+  margin-right: 10px;
+  color: #fff;
+  font-size: 10px;
+}
+.top-panel .btn-salesboost span:before {
+  color: #f7f7f7;
+}
+@media (max-width: 991px) {
+  .top-panel {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+@media (max-width: 575px) {
+  .top-panel .main-search {
+    margin: 15px 0;
+  }
+}
+
+.header .top-panel .main-search .icon-search {
+  left: 8px;
+  position: absolute;
+  top: 6px;
+  z-index: 1;
+}

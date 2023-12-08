@@ -1,0 +1,67 @@
+.welcome-wrapper {
+  padding: 65px 60px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.welcome-wrapper .time-wishing h2 {
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 1;
+  color: #fff;
+}
+.welcome-wrapper .time-wishing h4 {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1;
+  color: #fff;
+  margin: 2px 0 0;
+}
+.welcome-wrapper .quote-top {
+  text-align: right;
+}
+.welcome-wrapper .quote-top h5 {
+  color: #c4ccd8;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+.welcome-wrapper .quote-top p {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+}
+
+@media (max-width: 991px) {
+  .welcome-wrapper .main-search,
+  .recent-search {
+    margin-top: 150px;
+  }
+}
+@media (max-width: 767px) {
+  .welcome-wrapper {
+    padding: 30px;
+  }
+  .welcome-wrapper .quote-top {
+    margin-top: 30px;
+    text-align: left;
+  }
+  .welcome-wrapper .main-search,
+  .recent-search {
+    margin-top: 100px;
+  }
+}
+@media (max-width: 575px) {
+  .welcome-wrapper {
+    padding: 30px 20px;
+  }
+  .welcome-wrapper .main-search input.form-control {
+    padding: 15px 45px;
+  }
+  .welcome-wrapper .main-search .icon-search {
+    left: 10px;
+  }
+  .welcome-wrapper .main-search .icon-close {
+    right: 10px;
+  }
+}

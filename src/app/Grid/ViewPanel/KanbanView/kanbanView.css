@@ -1,0 +1,158 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.kanban-main {
+  background-color: #fff;
+  padding: 20px 10px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  overflow: auto;
+}
+
+.drag-n-drop {
+  display: flex;
+  align-items: flex-start;
+}
+.dnd-group {
+  background-color: #fff;
+  border: 1px solid #c4ccd8;
+  border-radius: 8px;
+  padding: 25px 20px 20px;
+  margin: 0 10px;
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 337px;
+}
+.dnd-group .dnd-header {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #c4ccd8;
+}
+.dnd-group .dnd-header h3 {
+  color: #040b1b;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+}
+.dnd-group .dnd-header .count {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #f6f8fc;
+  color: #040b1b;
+  font-size: 16px;
+  font-weight: 400;
+  margin-left: 10px;
+}
+.dnd-item {
+  background: #f6f8fc;
+  border-radius: 8px;
+  margin-top: 20px;
+  padding: 10px 15px 15px;
+}
+.dnd-item .item-header {
+  display: flex;
+  align-items: flex-start;
+}
+.dnd-item .item-header .item-icon {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.dnd-item .item-header .item-heading {
+  margin-left: 10px;
+}
+.dnd-item .item-header .item-heading h4 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+}
+.dnd-item .item-header .item-heading h5 {
+  font-size: 12px;
+  font-weight: 500;
+  color: #78858f;
+  margin-top: 5px;
+}
+.blue {
+  background: #3586df;
+}
+.orange {
+  background: #f1aa33;
+}
+.green {
+  background: #66cc82;
+}
+.dnd-item .item-row {
+  border-top: 1px solid #c4ccd8;
+  margin-top: 10px;
+  padding: 8px 0 0;
+}
+.dnd-item .item-row .item-row-inner {
+  padding: 2px 0;
+}
+.dnd-item .item-row .inner-row-top .inner-row-head,
+.dnd-item .item-row .inner-row-detail {
+  width: 50%;
+}
+.dnd-item .item-row .inner-row-top .inner-row-head h6 {
+  font-size: 12px;
+  font-weight: 500;
+  color: #78858f;
+}
+.dnd-item .item-row .inner-row-detail p {
+  font-size: 12px;
+  font-weight: 500;
+  color: #000;
+}
+.dnd-item .item-row .inner-row-bottom {
+  padding-top: 5px;
+}
+.dnd-item .item-row .inner-row-bottom .price h6 {
+  font-size: 22px;
+  font-weight: 500;
+}
+.dnd-item:not(:last-of-type) {
+  margin-bottom: 0.5rem;
+}
+.dnd-item * {
+  margin: 0;
+  font-size: 1.2rem;
+}
+.group-title {
+  text-align: left;
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
+.current {
+  background-color: #282c34;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

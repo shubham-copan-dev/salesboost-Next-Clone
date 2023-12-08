@@ -1,0 +1,149 @@
+.required-error {
+  color: #e80000;
+  font-size: 14px;
+  margin-bottom: -5px;
+}
+
+.required-field-error {
+  border-color: #e80000;
+}
+
+.required-error.address-error {
+  margin-bottom: 5px;
+}
+
+.drop-zone {
+  position: relative;
+}
+
+.loading {
+  height: 0;
+  width: 0;
+  padding: 8px;
+  border: 4px solid #ccc;
+  border-right-color: #888;
+  border-radius: 22px;
+  -webkit-animation: rotate 1s infinite linear;
+  animation: rotate 1s infinite linear;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+}
+
+@keyframes rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+#progressbar li.active:before {
+  content: '';
+}
+
+#progressbar li.step-complete:before {
+  content: '';
+  background-repeat: no-repeat;
+  background-size: 18px;
+  background-position: center;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/%3e%3c/svg%3e");
+}
+
+.drop-zone {
+  position: relative;
+}
+
+.loading {
+  height: 0;
+  width: 0;
+  padding: 8px;
+  border: 4px solid #ccc;
+  border-right-color: #888;
+  border-radius: 22px;
+  -webkit-animation: rotate 1s infinite linear;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+}
+
+@-webkit-keyframes rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+.msform label {
+  width: 100%;
+  display: block;
+  font-size: 13px;
+  color: #666666;
+  padding: 5px;
+  font-weight: 500;
+}
+
+.msform .form-control {
+  display: block;
+  width: 100%;
+  padding: 9px 10px;
+  font-size: 13px;
+  line-height: 1.5;
+  color: #040b1b;
+  background-color: #f2f7fd;
+  background-clip: padding-box;
+  border: 1px solid;
+  border-color: transparent;
+  border-radius: 8px;
+  height: 40px;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  outline: none;
+  font-family: Poppins;
+}
+
+.msform .form-wrapper .form-group {
+  margin-bottom: 15px;
+}
+
+.msform .custom-react-select__control {
+  background-color: #f2f7fd;
+  border-color: transparent;
+  font-size: 13px;
+  border-radius: 8px;
+  box-shadow: none !important;
+  font-family: Poppins;
+}
+.msform .custom-react-select__menu {
+  font-size: 13px;
+}
+.msform .form-control:focus,
+.msform .form-control:hover,
+.msform .custom-react-select__control:hover {
+  border-color: #3586df;
+}
+
+.msform textarea.form-control {
+  height: 100px !important;
+}
+
+.MuiList-root.MuiList-padding .MuiListItemText-primary {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.MuiTabs-root .MuiTab-root {
+  border-radius: 8px 8px 0px 0px;
+  background: #ebf1fa;
+  margin-right: 8px;
+}
+.MuiTabs-indicator.css-ckqibv-MuiTabs-indicator {
+  background-color: #3478f6;
+  height: 1px;
+}
+.css-1h5brqp-MuiButtonBase-root-MuiTab-root.Mui-selected {
+  background-color: #fff;
+}
+
+.form-select {
+  border: 0;
+  padding: 0;
+}
+.form-control:focus {
+  box-shadow: none;
+}
